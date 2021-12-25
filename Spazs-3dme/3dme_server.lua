@@ -1,7 +1,7 @@
-QBCore = nil
+
 local printItems = true
 
-TriggerEvent('QBCore:getSharedObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterServerEvent('3dme:shareDisplay')
 AddEventHandler('3dme:shareDisplay', function(text)
